@@ -28,3 +28,217 @@
   ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
   [1m[35m (9.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
   ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+Started GET "/" for ::1 at 2020-10-16 21:07:20 +0530
+  [1m[35m (241.2ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/gems/activerecord-5.2.4.4/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/gaurav/.rvm/gems/ruby-2.6.1/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/gaurav/.rvm/gems/ruby-2.6.1/gems/railties-5.2.4.4/lib/rails/templates/rails/welcome/index.html.erb (52.1ms)
+Completed 200 OK in 260ms (Views: 232.4ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (378.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (37.9ms)[0m  [1m[34mSELECT GET_LOCK('838900588777476330', 0)[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (30.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+Migrating to CreateStudents (20201018180835)
+  [1m[35m (1182.4ms)[0m  [1m[35mCREATE TABLE `students` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `roll_no` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20201018180835_create_students.rb:3
+  [1m[35m (57.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (141.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201018180835')[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (76.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (24.7ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('838900588777476330')[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (235.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (30.1ms)[0m  [1m[34mSELECT GET_LOCK('838900588777476330', 0)[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+Migrating to CreateCourses (20201018191007)
+  [1m[35m (644.6ms)[0m  [1m[35mCREATE TABLE `courses` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `course_code` varchar(255), `credits` varchar(255), `integer` varchar(255), `criteria` varchar(255), `aa` int, `ab` int, `bb` int, `bc` int, `cc` int, `cd` int, `dd` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20201018191007_create_courses.rb:3
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (63.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201018191007')[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (97.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('838900588777476330')[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (176.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT GET_LOCK('838900588777476330', 0)[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (15.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+Migrating to CreateExams (20201018192250)
+  [1m[35m (542.4ms)[0m  [1m[35mCREATE TABLE `exams` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `course_code` varchar(255), `max_marks` int, `weightage` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20201018192250_create_exams.rb:3
+  [1m[35m (1.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (13.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201018192250')[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (43.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+Migrating to AddCourseToExam (20201018192404)
+  [1m[35m (996.3ms)[0m  [1m[35mALTER TABLE `exams` ADD `course_id` bigint[0m
+  ↳ db/migrate/20201018192404_add_course_to_exam.rb:3
+  [1m[35m (376.1ms)[0m  [1m[35mCREATE  INDEX `index_exams_on_course_id`  ON `exams` (`course_id`) [0m
+  ↳ db/migrate/20201018192404_add_course_to_exam.rb:3
+  [1m[35m (1104.7ms)[0m  [1m[35mALTER TABLE `exams` ADD CONSTRAINT `fk_rails_66aea76c6a`
+FOREIGN KEY (`course_id`)
+  REFERENCES `courses` (`id`)
+[0m
+  ↳ db/migrate/20201018192404_add_course_to_exam.rb:3
+  [1m[35m (4.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (10.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201018192404')[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (60.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('838900588777476330')[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (28.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (4.0ms)[0m  [1m[34mSELECT GET_LOCK('838900588777476330', 0)[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+Migrating to CreateExamResults (20201018192733)
+  [1m[35m (397.3ms)[0m  [1m[35mCREATE TABLE `exam_results` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `student_name` varchar(255), `roll_no` int, `course_code` varchar(255), `exam_name` varchar(255), `marks_obtained` int, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20201018192733_create_exam_results.rb:3
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (10.1ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201018192733')[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (49.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+Migrating to AddCourseToExamResult (20201018192847)
+  [1m[35m (616.5ms)[0m  [1m[35mALTER TABLE `exam_results` ADD `course_id` bigint[0m
+  ↳ db/migrate/20201018192847_add_course_to_exam_result.rb:3
+  [1m[35m (281.3ms)[0m  [1m[35mCREATE  INDEX `index_exam_results_on_course_id`  ON `exam_results` (`course_id`) [0m
+  ↳ db/migrate/20201018192847_add_course_to_exam_result.rb:3
+  [1m[35m (912.4ms)[0m  [1m[35mALTER TABLE `exam_results` ADD CONSTRAINT `fk_rails_be79a00c4f`
+FOREIGN KEY (`course_id`)
+  REFERENCES `courses` (`id`)
+[0m
+  ↳ db/migrate/20201018192847_add_course_to_exam_result.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (30.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201018192847')[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (89.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+Migrating to AddStudentToExamResult (20201018192912)
+  [1m[35m (849.1ms)[0m  [1m[35mALTER TABLE `exam_results` ADD `student_id` bigint[0m
+  ↳ db/migrate/20201018192912_add_student_to_exam_result.rb:3
+  [1m[35m (293.5ms)[0m  [1m[35mCREATE  INDEX `index_exam_results_on_student_id`  ON `exam_results` (`student_id`) [0m
+  ↳ db/migrate/20201018192912_add_student_to_exam_result.rb:3
+  [1m[35m (967.6ms)[0m  [1m[35mALTER TABLE `exam_results` ADD CONSTRAINT `fk_rails_30b8dff9fa`
+FOREIGN KEY (`student_id`)
+  REFERENCES `students` (`id`)
+[0m
+  ↳ db/migrate/20201018192912_add_student_to_exam_result.rb:3
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (6.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201018192912')[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (47.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.6ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT RELEASE_LOCK('838900588777476330')[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (19.1ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (7.9ms)[0m  [1m[34mSELECT GET_LOCK('838900588777476330', 0)[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+Migrating to CreateCourseRegistrations (20201018193027)
+  [1m[35m (407.5ms)[0m  [1m[35mCREATE TABLE `course_registrations` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `roll_no` int, `course_code` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20201018193027_create_course_registrations.rb:3
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201018193027')[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (62.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+Migrating to AddStudentToCourseRegistration (20201018193050)
+  [1m[35m (801.5ms)[0m  [1m[35mALTER TABLE `course_registrations` ADD `student_id` bigint[0m
+  ↳ db/migrate/20201018193050_add_student_to_course_registration.rb:3
+  [1m[35m (227.8ms)[0m  [1m[35mCREATE  INDEX `index_course_registrations_on_student_id`  ON `course_registrations` (`student_id`) [0m
+  ↳ db/migrate/20201018193050_add_student_to_course_registration.rb:3
+  [1m[35m (831.4ms)[0m  [1m[35mALTER TABLE `course_registrations` ADD CONSTRAINT `fk_rails_db5b9eea6c`
+FOREIGN KEY (`student_id`)
+  REFERENCES `students` (`id`)
+[0m
+  ↳ db/migrate/20201018193050_add_student_to_course_registration.rb:3
+  [1m[35m (12.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201018193050')[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (40.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+Migrating to AddCourseToCourseRegistration (20201018193108)
+  [1m[35m (655.7ms)[0m  [1m[35mALTER TABLE `course_registrations` ADD `course_id` bigint[0m
+  ↳ db/migrate/20201018193108_add_course_to_course_registration.rb:3
+  [1m[35m (233.6ms)[0m  [1m[35mCREATE  INDEX `index_course_registrations_on_course_id`  ON `course_registrations` (`course_id`) [0m
+  ↳ db/migrate/20201018193108_add_course_to_course_registration.rb:3
+  [1m[35m (826.6ms)[0m  [1m[35mALTER TABLE `course_registrations` ADD CONSTRAINT `fk_rails_9eed10bf15`
+FOREIGN KEY (`course_id`)
+  REFERENCES `courses` (`id`)
+[0m
+  ↳ db/migrate/20201018193108_add_course_to_course_registration.rb:3
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (8.6ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20201018193108')[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (57.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('838900588777476330')[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /home/gaurav/.rvm/gems/ruby-2.6.1/bin/rake:23
